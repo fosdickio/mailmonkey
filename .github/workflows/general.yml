@@ -18,9 +18,9 @@ jobs:
           POSTGRES_DB: mailmonkey
         ports:
           - 5432:5432
-      env:
-        SQLX_VERSION: 0.5.7
-        SQLX_FEATURES: postgres
+    env:
+      SQLX_VERSION: 0.5.7
+      SQLX_FEATURES: postgres
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
